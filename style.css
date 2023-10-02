@@ -1,0 +1,312 @@
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./fonts/Mont-LightItalic.ttf') format('truetype'); 
+  font-weight: 300; 
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./fonts/Mont-Regular.ttf') format('woff'); 
+  font-weight: 400; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./fonts/Mont-SemiBold.ttf') format('woff'); 
+  font-weight: 500; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./fonts/Mont-Light.ttf') format('woff'); 
+  font-weight: 300; 
+  font-style: normal; 
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  --main-color: #CECAC4;
+  --text1-color: #202020;
+  --text2-color: #ffffff;
+}
+
+.body {
+  margin: 0 auto;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+dt::after {
+  content: ': ';
+}
+
+
+.navigation {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  font-size: 22px;
+  color: var(--text2-color);
+}
+
+.spisok {
+  padding: 36px 16% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color:var(--text1-color);
+}
+
+.wrapper {
+  background-color: var(--main-color);
+  background-image: url(./img/background_svg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content_wrapper {
+  display: flex;
+  padding:97px 111px 90px 208px ;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 500; 
+  font-style: normal; 
+  font-size: 65px;
+  color: var(--text1-color);
+  margin: 0px 144px 60px 0px;
+}
+
+.content_h2 {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 500; 
+  font-style: normal; 
+  font-size: 35px;
+  color: var(--text1-color);
+  margin: 0px 50px 55px 0px;
+}
+
+.img_container {
+  margin-bottom: 100px;
+}
+
+.age {
+  background-color: #ffffff;
+  opacity: 0.6;
+  width: 408px;
+  padding:36px 69px;
+  outline:1px solid black;
+}
+
+.age_text {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 300; 
+  font-style: normal; 
+  font-size: 20px;
+  color: var(--text1-color);
+}
+
+.list_key {
+  display: flex;
+  margin-top: 20px;
+}
+
+dd {
+  margin: 0;
+}
+
+.jobtitle {
+  padding: 100px 80px 90px;
+}
+
+.type_h2 {
+  margin-bottom: 50px;
+  margin-left: 130px;
+  font-family: 'Mont', sans-serif; 
+  font-weight: 500; 
+  font-style: normal; 
+  font-size: 35px;
+  color: var(--text1-color);
+}
+
+hr {
+  border: none;
+  background-color: #000000;
+  height: 1px;
+}
+
+.wrapper_text {
+  margin-top: 75px;
+  margin-left: 51px;
+}
+
+.type_text {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 300; 
+  font-style: normal; 
+  font-size: 22px;
+  color: var(--text1-color);
+  margin-bottom: 36px;
+}
+
+.experience {
+  padding: 100px 80px 90px;
+  background-color: var(--main-color);
+}
+
+.experience_h3 {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  font-size: 27px;
+  color: var(--text1-color);
+}
+
+.wrapper_text {
+  margin-top: 65px;
+  font-family: 'Mont', sans-serif; 
+  font-weight: 300; 
+  font-style: normal; 
+  font-size: 22px;
+  color: var(--text1-color);
+}
+
+table {
+  margin : 75px auto 90px;
+  border: 1px solid #000000;
+  justify-items: center ;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 27px;
+  text-align: center;
+}
+
+th {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 500; 
+  font-style: normal; 
+  font-size: 27px;
+  color: var(--text1-color);
+}
+
+.table_text {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  font-size: 22px;
+  color: var(--text1-color);
+}
+
+.table_year {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 500; 
+  font-style: normal; 
+  font-size: 35px;
+  color: var(--text1-color);
+}
+
+.education {
+  padding: 100px 80px 0px;
+}
+
+.skill {
+  padding: 100px 80px 90px;
+  background-color: var(--main-color);
+}
+
+.skill_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_item {
+  background-color: #F0EFED ;
+  color: var(--text1-color);
+  padding: 16px 32px;
+  border-radius: 50px;
+  border:  1px solid #000000;
+  width: fit-content;
+  height: fit-content;
+  font-family: 'Mont', sans-serif; 
+  font-weight: 300; 
+  font-style: italic; 
+  font-size: 22px;
+}
+
+.skill_hr {
+  margin-bottom: 75px;
+}
+
+.footer_wrapper {
+  padding: 36px 80px 50px;
+  background-color: var(--text1-color) ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_name {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 300; 
+  font-style: italic; 
+  font-size: 35px;
+  color: var(--text2-color);
+  margin: 0px 0px 19px;
+}
+
+.footer_text {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 300; 
+  font-style: normal; 
+  font-size: 22px;
+  color: var(--text2-color);
+  margin: 0px 0px 19px;
+}
+
+.footer_info {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 300; 
+  font-style: normal; 
+  font-size: 18px;
+  color: var(--text2-color);
+}
+
+.block {
+  display: inline-block;
+}
+
+.footer_link {
+  font-family: 'Mont', sans-serif; 
+  font-weight: 400; 
+  font-style: normal; 
+  font-size: 22px;
+  color: var(--text2-color);
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.link_wrap {
+  margin: 65px 0px 15px;
+}
